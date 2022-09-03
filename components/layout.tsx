@@ -1,76 +1,34 @@
 import Head from 'next/head'
-import Image from 'next/image'
-import styles from './layout.module.css'
-import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
+import Favicon from './favicon'
+import Header from './header'
 
-const name = '[Your Name]'
-export const siteTitle = 'Next.js Sample Website'
+export const siteTitle = 'Ilya Amelevich personal blog'
 
 export default function Layout({
   children,
-  home
+  home,
 }: {
   children: React.ReactNode
   home?: boolean
 }) {
   return (
-    <div className={styles.container}>
+    <div className="container max-w-2xl mx-auto md:px-2">
       <Head>
-        <link rel="icon" href="/favicon.ico" />
+        <Favicon/>
         <meta
           name="description"
-          content="Learn how to build a personal website using Next.js"
-        />
-        <meta
-          property="og:image"
-          content={`https://og-image.vercel.app/${encodeURI(
-            siteTitle
-          )}.png?theme=light&md=0&fontSize=75px&images=https%3A%2F%2Fassets.zeit.co%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-black-logo.svg`}
+          content="Ilya Amelevich personal blog"
         />
         <meta name="og:title" content={siteTitle} />
-        <meta name="twitter:card" content="summary_large_image" />
+        <script src="https://kit.fontawesome.com/301fc2a094.js" crossOrigin="anonymous"></script>
       </Head>
-      <header className={styles.header}>
-        {home ? (
-          <>
-            <Image
-              priority
-              src="/images/profile.jpg"
-              className={utilStyles.borderCircle}
-              height={144}
-              width={144}
-              alt={name}
-            />
-            <h1 className={utilStyles.heading2Xl}>{name}</h1>
-          </>
-        ) : (
-          <>
-            <Link href="/">
-              <a>
-                <Image
-                  priority
-                  src="/images/profile.jpg"
-                  className={utilStyles.borderCircle}
-                  height={108}
-                  width={108}
-                  alt={name}
-                />
-              </a>
-            </Link>
-            <h2 className={utilStyles.headingLg}>
-              <Link href="/">
-                <a className={utilStyles.colorInherit}>{name}</a>
-              </Link>
-            </h2>
-          </>
-        )}
-      </header>
+      <Header/>
       <main>{children}</main>
       {!home && (
-        <div className={styles.backToHome}>
+        <div className="my-2">
           <Link href="/">
-            <a>← Back to home</a>
+            <a className='bg-gradient-to-r from-green-400 to-blue-500 bg-clip-text hover:text-transparent'>← Back to home</a>
           </Link>
         </div>
       )}
