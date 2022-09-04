@@ -2,7 +2,8 @@
  * @type {import('next').NextConfig}
  */
 const nextConfig = {
-  assetPrefix: './',
+  basePath: '/uol-web-development-final-project',
+  assetPrefix: '/uol-web-development-final-project',
   experimental: {
     images: {
       unoptimized: true,

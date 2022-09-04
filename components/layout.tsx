@@ -28,7 +28,7 @@ export default function Layout({
       <main>{children}</main>
       {!home && (
         <div className="my-6">
-          <Link href="./">
+          <Link href="/">
             <a className="gradient-link">
               ← Back to home
             </a>
