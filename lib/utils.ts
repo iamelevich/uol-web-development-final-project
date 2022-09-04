@@ -1,4 +1,4 @@
-export function shuffle<T>(array: T[]): T[] {
+function shuffle<T>(array: T[]): T[] {
   let currentIndex = array.length;
   let randomIndex: number;
 
@@ -17,3 +17,7 @@ export function shuffle<T>(array: T[]): T[] {
 
   return array;
 }
+
+const prefix = process.env.NEXT_PUBLIC_BASE_PATH || '';
+
+export { prefix, shuffle };

@@ -5,12 +5,12 @@ authorName: "Vivek Naskar"
 authorLink: "https://medium.com/@viveknaskar"
 source: "https://medium.com/gitconnected/9-incredible-websites-that-every-developer-should-bookmark-1534d52f3f7d"
 sourceName: "Medium"
-image: "./images/9-websites-1.jpeg"
+image: "/images/9-websites-1.jpeg"
 ---
 
 These websites will not only assist you in your software development journey, but will also assist you in your content creation journey.
 
-![9 Incredible Websites That Every Developer Should Bookmark](./images/9-websites-1.jpeg)
+![9 Incredible Websites That Every Developer Should Bookmark](/images/9-websites-1.jpeg)
 
 I have been working as a software developer for quite some time now. When I started, I always wanted to improve myself to become better like my fellow experienced colleagues. They always seem to do things faster than us. I always felt that I needed to improve in all aspects if I wanted to succeed.
 
@@ -20,7 +20,7 @@ Here are some of the top websites that I think every developer should bookmark. 
 
 ## OverAPI
 
-![OverAPI](./images/9-websites-2.png)
+![OverAPI](/images/9-websites-2.png)
 
 Website link: [https://overapi.com/](https://overapi.com/)
 
@@ -28,7 +28,7 @@ One of the best websites that I have come across simply because it has cheatshee
 
 ## Carbon
 
-![Carbon](./images/9-websites-3.png)
+![Carbon](/images/9-websites-3.png)
 
 Website link: [https://carbon.now.sh/](https://carbon.now.sh/)
 
@@ -36,7 +36,7 @@ I have been creating content for some time now, where my main niche is technolog
 
 ## Code Beautify
 
-![Code Beautify](./images/9-websites-4.png)
+![Code Beautify](/images/9-websites-4.png)
 
 Website link: [https://codebeautify.org/](https://codebeautify.org/)
 
@@ -44,7 +44,7 @@ I often refer to this site as the “swiss-knife” of websites because of the n
 
 ## synthesia
 
-![synthesia](./images/9-websites-5.png)
+![synthesia](/images/9-websites-5.png)
 
 Website link: [https://www.synthesia.io/](https://www.synthesia.io/)
 
@@ -56,7 +56,7 @@ However, there’s a catch. Synthesia is not free. But you can trail out the vid
 
 ## resume.io
 
-![resume.io](./images/9-websites-6.png)
+![resume.io](/images/9-websites-6.png)
 
 Website link: [https://resume.io/](https://resume.io/)
 
@@ -64,7 +64,7 @@ Although I usually create and update my resume on my own, this website is so han
 
 ## Responsively
 
-![Responsively](./images/9-websites-7.png)
+![Responsively](/images/9-websites-7.png)
 
 Website link: [https://responsively.app/](https://responsively.app/)
 
@@ -72,7 +72,7 @@ An open-source website that lets you preview all target screens in a single wind
 
 ## medusa
 
-![medusa](./images/9-websites-8.png)
+![medusa](/images/9-websites-8.png)
 
 Website link: [https://www.medusajs.com/](https://www.medusajs.com/)
 
@@ -80,7 +80,7 @@ Medusa is an open-source headless commerce engine that enables developers to cre
 
 ## roadmap.sh
 
-![roadmap.sh](./images/9-websites-9.png)
+![roadmap.sh](/images/9-websites-9.png)
 
 Website link: [https://roadmap.sh/](https://roadmap.sh/)
 
@@ -88,7 +88,7 @@ A website containing the roadmaps for learning a programming language or a frame
 
 ## Poet.so
 
-![Poet.so](./images/9-websites-10.png)
+![Poet.so](/images/9-websites-10.png)
 
 Website link: [https://poet.so/](https://poet.so/)
 

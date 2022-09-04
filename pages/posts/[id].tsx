@@ -6,6 +6,7 @@ import { GetStaticProps, GetStaticPaths } from 'next';
 import { PostData } from '../../lib/types';
 import Author from '../../components/author';
 import Source from '../../components/source';
+import { prefix } from '../../lib/utils';
 
 export default function Post({ postData }: { postData: PostData }) {
   return (
@@ -31,7 +32,7 @@ export default function Post({ postData }: { postData: PostData }) {
         </div>
         <div
           className="prose"
-          dangerouslySetInnerHTML={{ __html: postData.contentHtml }}
+          dangerouslySetInnerHTML={{ __html: postData.contentHtml.replace(/\/images/g, `${prefix}/images`) }}
         />
       </article>
     </Layout>

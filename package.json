@@ -3,9 +3,10 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && next export",
+    "build": "next build",
+    "export": "next export",
     "start": "next start",
-    "deploy": "pnpm build && gh-pages -d out"
+    "deploy": "pnpm build && next export && gh-pages -d out"
   },
   "dependencies": {
     "date-fns": "^2.29.2",

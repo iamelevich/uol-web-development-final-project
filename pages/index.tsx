@@ -8,7 +8,7 @@ import { PostList } from '../lib/types';
 import Image from 'next/image';
 import Author from '../components/author';
 import Source from '../components/source';
-import { shuffle } from '../lib/utils';
+import { prefix, shuffle } from '../lib/utils';
 
 const HOVER_COLORS = {
   colors: shuffle([
@@ -34,7 +34,7 @@ export default function Home({ allPostsData }: { allPostsData: PostList }) {
       </Head>
       <section className="mb-8 text-center text-slate-600 italic">
         <p>
-          Hi! My name is <strong>Ilya Amelevich</strong> and I&#39m{' '}
+          Hi! My name is <strong>Ilya Amelevich</strong> and I{"'"}m{' '}
           <strong>Software Developer</strong>
         </p>
         <p>Welcome to my blog</p>
@@ -73,7 +73,7 @@ export default function Home({ allPostsData }: { allPostsData: PostList }) {
                   </small>
                 </div>
                 <Image
-                  src={image}
+                  src={`${prefix}${image}`}
                   alt="Picture of the author"
                   width={1400}
                   height={523}

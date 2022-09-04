@@ -9,7 +9,7 @@ export default function About({}) {
       </Head>
       <section className="mb-8 text-center text-slate-600">
         <p>
-          Hi! My name is <strong>Ilya Amelevich</strong> and I&#39m{' '}
+          Hi! My name is <strong>Ilya Amelevich</strong> and I{"'"}m{' '}
           <strong>Software Developer</strong>
         </p>
         <p>Welcome to my blog</p>
