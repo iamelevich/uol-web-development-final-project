@@ -4,7 +4,7 @@ export default function Author({ name, link }: { name: string; link: string }) {
   return (
     <Link href={link}>
       <a
-        className="text-slate-500 bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text hover:text-transparent"
+        className="text-slate-500 gradient-link"
         rel="author"
         target="_blank"
       >

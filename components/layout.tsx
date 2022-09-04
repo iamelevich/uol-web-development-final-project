@@ -28,7 +28,7 @@ export default function Layout({
       {!home && (
         <div className="my-6">
           <Link href="/">
-            <a className="bg-gradient-to-r from-green-400 to-blue-500 bg-clip-text transition ease-in-out delay-150 duration-300 hover:text-transparent">
+            <a className="gradient-link">
               ← Back to home
             </a>
           </Link>

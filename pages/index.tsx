@@ -8,16 +8,17 @@ import { PostList } from '../lib/types';
 import Image from 'next/image';
 import Author from '../components/author';
 import Source from '../components/source';
+import { shuffle } from '../lib/utils';
 
 const HOVER_COLORS = {
-  colors: [
+  colors: shuffle([
     'hover:text-cyan-400',
     'hover:text-red-400',
     'hover:text-green-400',
     'hover:text-yellow-400',
     'hover:text-violet-400',
     'hover:text-fuchsia-400',
-  ],
+  ]),
   getColor() {
     const color = this.colors.shift();
     this.colors.push(color);
@@ -83,7 +84,7 @@ export default function Home({ allPostsData }: { allPostsData: PostList }) {
                 />
                 <div className="text-center py-2">
                   <Link href={`/posts/${id}`}>
-                    <a className="transition ease-in-out delay-150 duration-300 bg-gradient-to-r from-green-400 to-blue-500 bg-clip-text hover:text-transparent">
+                    <a className="gradient-link">
                       Read More
                     </a>
                   </Link>
