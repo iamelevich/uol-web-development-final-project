@@ -57,7 +57,7 @@ export default function Home({ allPostsData }: { allPostsData: PostList }) {
                 <h2
                   className={`transition-colors duration-200 ease-in-out ${HOVER_COLORS.getColor()} pb-2 text-3xl font-extrabold leading-tight md:text-4xl`}
                 >
-                  <Link href={`/posts/${id}`}>
+                  <Link href={`./posts/${id}`}>
                     <a>{title}</a>
                   </Link>
                 </h2>
@@ -83,7 +83,7 @@ export default function Home({ allPostsData }: { allPostsData: PostList }) {
                   dangerouslySetInnerHTML={{ __html: firstParagraph }}
                 />
                 <div className="text-center py-2">
-                  <Link href={`/posts/${id}`}>
+                  <Link href={`./posts/${id}`}>
                     <a className="gradient-link">
                       Read More
                     </a>

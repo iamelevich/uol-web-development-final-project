@@ -4,7 +4,7 @@ export default function Header() {
   return (
     <header className="py-8">
       <div className="flex items-baseline justify-between mx-auto">
-        <Link href="/">
+        <Link href="./">
           <a className="text-xl font-bold gradient-link" title="Go to Homepage">
             Ilya Amelevich
           </a>
@@ -12,7 +12,7 @@ export default function Header() {
         <nav>
           <ul className="flex space-x-6 text-sm font-semibold">
             <li>
-              <Link href="/about">
+              <Link href="./about">
                 <a className="gradient-link">About Me</a>
               </Link>
             </li>

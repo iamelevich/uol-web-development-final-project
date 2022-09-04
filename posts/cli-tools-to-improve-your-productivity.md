@@ -5,7 +5,7 @@ authorName: "not_afraid"
 authorLink: "https://not-afraid.medium.com/"
 source: "https://not-afraid.medium.com/cli-tools-to-improve-your-productivity-e985afc2bd57"
 sourceName: "Medium"
-image: "/images/cli-tools-to-improve-your-productivity-1.png"
+image: "./images/cli-tools-to-improve-your-productivity-1.png"
 ---
 
 I love exploring cli tools that saves my time on cli and more importantly prints the stuff with syntax highlightling or good visualizations. Here are a bunch of which i use:
@@ -14,13 +14,13 @@ I love exploring cli tools that saves my time on cli and more importantly prints
 
 > Dust gives an instant overview of disk space used by directories.([Github](https://github.com/bootandy/dust))
 
-![dust screenshot](/images/cli-tools-to-improve-your-productivity-1.png)
+![dust screenshot](./images/cli-tools-to-improve-your-productivity-1.png)
 
 2. **duf**
 
 > Shows Disk Usage/Free Utility in a nice table format. ([Github](https://github.com/muesli/duf))
 
-![duf screenshot](/images/cli-tools-to-improve-your-productivity-2.png)
+![duf screenshot](./images/cli-tools-to-improve-your-productivity-2.png)
 
 3. **bat**
 
@@ -32,7 +32,7 @@ This tool is a must have.
 
 > A replacement of top command with better visualisation for resource monitoring. ([Github](https://github.com/aristocratos/bpytop))
 
-![bpytop screenshot](/images/cli-tools-to-improve-your-productivity-4.png)
+![bpytop screenshot](./images/cli-tools-to-improve-your-productivity-4.png)
 
 5. **fx**
 
@@ -58,7 +58,7 @@ This is my personal favourite tool. I use it quite a lot from time to time.
 
 Linux man pages can be overwhelming to see summary or quick usage for a tool(yeah they are good if you are looking for more detailed explanation), so this tool gives a quick summary and usage commands, flag, args etc for a cli tools with nice syntax highlighting.
 
-![tldr screenshot](/images/cli-tools-to-improve-your-productivity-8.png)
+![tldr screenshot](./images/cli-tools-to-improve-your-productivity-8.png)
 
 9. **most**
 
@@ -72,7 +72,7 @@ If you want your default pager to be **most**, in your bashrc or zshrc you can d
 man grep | most
 ```
 
-![most screenshot](/images/cli-tools-to-improve-your-productivity-9.png)
+![most screenshot](./images/cli-tools-to-improve-your-productivity-9.png)
 
 10. **lsof**
 

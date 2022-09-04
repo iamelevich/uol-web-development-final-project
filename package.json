@@ -4,7 +4,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build && next export",
-    "start": "next start"
+    "start": "next start",
+    "deploy": "pnpm build && gh-pages -d out"
   },
   "dependencies": {
     "date-fns": "^2.29.2",
@@ -26,6 +27,7 @@
     "eslint": "^8.23.0",
     "eslint-config-next": "^12.2.5",
     "eslint-config-prettier": "^8.5.0",
+    "gh-pages": "^4.0.0",
     "postcss": "^8.4.16",
     "prettier": "^2.7.1",
     "tailwindcss": "^3.1.8",
