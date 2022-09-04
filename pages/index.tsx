@@ -34,7 +34,7 @@ export default function Home({ allPostsData }: { allPostsData: PostList }) {
       </Head>
       <section className="mb-8 text-center text-slate-600 italic">
         <p>
-          Hi! My name is <strong>Ilya Amelevich</strong> and I'm{' '}
+          Hi! My name is <strong>Ilya Amelevich</strong> and I&#39m{' '}
           <strong>Software Developer</strong>
         </p>
         <p>Welcome to my blog</p>

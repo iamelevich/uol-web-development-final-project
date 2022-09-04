@@ -12,8 +12,8 @@ export default function Header() {
         <nav>
           <ul className="flex space-x-6 text-sm font-semibold">
             <li>
-              <Link href="/">
-                <a className="gradient-link">Blog</a>
+              <Link href="/about">
+                <a className="gradient-link">About Me</a>
               </Link>
             </li>
             <li>

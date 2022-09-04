@@ -21,6 +21,7 @@ export default function Layout({
         <script
           src="https://kit.fontawesome.com/301fc2a094.js"
           crossOrigin="anonymous"
+          defer
         ></script>
       </Head>
       <Header />
