@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Link from 'next/link';
 import Layout from '../components/layout';
 
 export default function Report() {
@@ -99,8 +100,30 @@ export default function Report() {
 
         <h2>What resources were used when creating your work?</h2>
         <p>
-          I have used only documentation of libraries/frameworks that I used. This is: <a href="https://nextjs.org">Next.js</a> and <a href="https://tailwindcss.com">TailwindCSS</a>.
+          I have used only documentation of libraries/frameworks that I used.
+          This is: <a href="https://nextjs.org">Next.js</a> and{' '}
+          <a href="https://tailwindcss.com">TailwindCSS</a>.
         </p>
+        <ol>
+          <li>
+            Tailwindcss.com, {"'"}TailwindCSS Reference{"'"}, 2022. [Online].
+            Available:{' '}
+            <a href="https://tailwindcss.com">https://tailwindcss.com</a>
+          </li>
+          <li>
+            Next.js, {"'"}Next.js Reference{"'"}, 2022. [Online]. Available:{' '}
+            <a href="https://nextjs.org">https://nextjs.org</a>
+          </li>
+        </ol>
+
+        <h2>Appendices</h2>
+        <ul>
+          <li>
+            <Link href="/sitemap.xml">
+              <a>Site Map</a>
+            </Link>
+          </li>
+        </ul>
       </section>
     </Layout>
   );
