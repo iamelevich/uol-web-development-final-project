@@ -20,5 +20,5 @@ export default function favicon() {
         href="/favicon/favicon-96.png"
       />
     </>
-  )
+  );
 }

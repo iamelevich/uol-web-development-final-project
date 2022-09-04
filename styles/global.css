@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .prose a {
+    @apply bg-gradient-to-r from-green-400 to-blue-500 bg-clip-text transition ease-in-out delay-150 duration-300 hover:text-transparent;
+  }
+  
+  .prose img {
+    @apply transition ease-in-out delay-150 duration-300 hover:scale-125
+  }
+}

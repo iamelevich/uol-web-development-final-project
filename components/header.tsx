@@ -22,5 +22,5 @@ export default function Header() {
         </nav>
       </div>
     </header>
-  )
+  );
 }
