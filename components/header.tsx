@@ -23,6 +23,13 @@ export default function Header() {
                 </a>
               </Link>
             </li>
+            <li>
+              <Link href="https://github.com/iamelevich">
+                <a className="gradient-link">
+                  <i className="fa-brands fa-github"></i>
+                </a>
+              </Link>
+            </li>
           </ul>
         </nav>
       </div>

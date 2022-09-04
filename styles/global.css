@@ -7,6 +7,10 @@
     @apply bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text transition ease-in-out delay-150 duration-300 hover:text-transparent
   }
 
+  .cv-badge {
+    @apply px-1 py-1 bg-indigo-400 rounded-lg inline-block text-xs m-0.5 text-white
+  }
+
   .prose a {
     @apply gradient-link;
   }
