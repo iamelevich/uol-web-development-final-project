@@ -1,13 +1,38 @@
 import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
-import { remark } from 'remark';
-import html from 'remark-html';
-import { PostData, PostList, PostListItem, PostMeta } from './types';
+import MarkdownIt from 'markdown-it';
+import hljs from 'highlight.js';
+import { PostData, PostList, PostMeta } from './types';
 
 const postsDirectory = path.join(process.cwd(), 'posts');
 
-export async function getSortedPostsData(): Promise<PostList> {
+const transformMd = (text: string): string => {
+  const md = MarkdownIt({
+    html: true,
+    typographer: true,
+    highlight: function (str, lang) {
+      if (lang && hljs.getLanguage(lang)) {
+        try {
+          return (
+            '<pre class="hljs"><code>' +
+            hljs.highlight(str, { language: lang, ignoreIllegals: true })
+              .value +
+            '</code></pre>'
+          );
+        } catch (__) {}
+      }
+
+      return (
+        '<pre class="hljs"><code>' + md.utils.escapeHtml(str) + '</code></pre>'
+      );
+    },
+  });
+
+  return md.render(text);
+};
+
+export function getSortedPostsData(): PostList {
   // Get file names under /posts
   const fileNames = fs.readdirSync(postsDirectory);
   const allPostsData: PostList = [];
@@ -22,9 +47,7 @@ export async function getSortedPostsData(): Promise<PostList> {
     // Use gray-matter to parse the post metadata section
     const matterResult = matter(fileContents);
 
-    const processedContent = await remark()
-      .use(html)
-      .process(matterResult.content.trim().split('\n').shift());
+    const processedContent = transformMd(matterResult.content.trim().split('\n').shift());
     const firstParagraph = processedContent.toString();
 
     // Combine the data with the id
@@ -55,7 +78,7 @@ export function getAllPostIds() {
   });
 }
 
-export async function getPostData(id: string): Promise<PostData> {
+export function getPostData(id: string): PostData {
   const fullPath = path.join(postsDirectory, `${id}.md`);
   const fileContents = fs.readFileSync(fullPath, 'utf8');
 
@@ -63,11 +86,7 @@ export async function getPostData(id: string): Promise<PostData> {
   const matterResult = matter(fileContents);
 
   // Use remark to convert markdown into HTML string
-  const processedContent = await remark()
-    .use(html, {
-      sanitize: false,
-    })
-    .process(matterResult.content);
+  const processedContent = transformMd(matterResult.content);
   const contentHtml = processedContent.toString();
 
   // Combine the data with the id and contentHtml

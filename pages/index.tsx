@@ -76,6 +76,7 @@ export default function Home({ allPostsData }: { allPostsData: PostList }) {
                   alt="Picture of the author"
                   width={1400}
                   height={523}
+                  objectFit="cover"
                 />
                 <div
                   className="prose my-2"
@@ -96,7 +97,7 @@ export default function Home({ allPostsData }: { allPostsData: PostList }) {
 }
 
 export const getStaticProps: GetStaticProps = async () => {
-  const allPostsData = await getSortedPostsData();
+  const allPostsData = getSortedPostsData();
   return {
     props: {
       allPostsData,

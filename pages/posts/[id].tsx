@@ -32,7 +32,12 @@ export default function Post({ postData }: { postData: PostData }) {
         </div>
         <div
           className="prose"
-          dangerouslySetInnerHTML={{ __html: postData.contentHtml.replace(/\/images/g, `${prefix}/images`) }}
+          dangerouslySetInnerHTML={{
+            __html: postData.contentHtml.replace(
+              /\/images/g,
+              `${prefix}/images`
+            ),
+          }}
         />
       </article>
     </Layout>
@@ -48,7 +53,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 };
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
-  const postData = await getPostData(params.id as string);
+  const postData = getPostData(params.id as string);
   return {
     props: {
       postData,

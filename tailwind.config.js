@@ -5,10 +5,21 @@ module.exports = {
     './components/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
+    hljs: {
+      theme: 'night-owl',
+    },
     container: {
       padding: '2rem',
     },
     extend: {},
   },
-  plugins: [require('@tailwindcss/typography')],
-}
+  safelist: [
+    {
+      pattern: /hljs+/,
+    },
+  ],
+  plugins: [
+    require('@tailwindcss/typography'),
+    require('tailwind-highlightjs'),
+  ],
+};
