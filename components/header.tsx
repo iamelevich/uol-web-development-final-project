@@ -17,6 +17,11 @@ export default function Header() {
               </Link>
             </li>
             <li>
+              <Link href="/report">
+                <a className="gradient-link">Report</a>
+              </Link>
+            </li>
+            <li>
               <Link href="https://www.linkedin.com/in/ilya-amelevich-9a8443b6/">
                 <a className="gradient-link" target="_blank">
                   <i className="fa-brands fa-linkedin"></i>
