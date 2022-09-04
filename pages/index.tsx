@@ -37,7 +37,6 @@ export default function Home({ allPostsData }: { allPostsData: PostList }) {
           Hi! My name is <strong>Ilya Amelevich</strong> and I{"'"}m{' '}
           <strong>Software Developer</strong>
         </p>
-        <p>Welcome to my blog</p>
       </section>
       <section>
         <ul>
@@ -84,9 +83,7 @@ export default function Home({ allPostsData }: { allPostsData: PostList }) {
                 />
                 <div className="text-center py-2">
                   <Link href={`/posts/${id}`}>
-                    <a className="gradient-link">
-                      Read More
-                    </a>
+                    <a className="gradient-link">Read More</a>
                   </Link>
                 </div>
               </li>
