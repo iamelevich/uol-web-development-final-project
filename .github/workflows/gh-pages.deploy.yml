@@ -10,6 +10,7 @@ jobs:
 
     env:
       NEXT_PUBLIC_BASE_PATH: /uol-web-development-final-project
+      NEXT_PUBLIC_UNSPLASH_TOKEN: ${{ secrets.NEXT_PUBLIC_UNSPLASH_TOKEN }}
 
     strategy:
       matrix:
