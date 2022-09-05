@@ -3,7 +3,7 @@ import Layout from '../components/layout';
 import Image from 'next/image';
 import myPhoto from '../public/images/my_photo.jpg';
 
-export default function About({}) {
+export default function AboutPage({}) {
   return (
     <Layout>
       <Head>

@@ -8,7 +8,7 @@ import Author from '../../components/author';
 import Source from '../../components/source';
 import { prefix } from '../../lib/utils';
 
-export default function Post({ postData }: { postData: PostData }) {
+export default function PostPage({ postData }: { postData: PostData }) {
   return (
     <Layout>
       <Head>

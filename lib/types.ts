@@ -13,4 +13,9 @@ export type PostData = PostMeta & {
   contentHtml: string;
 };
 
+export type PostListItem = PostMeta & {
+  id: string;
+  firstParagraph: string;
+};
+
 export type PostList = PostListItem[];

@@ -26,7 +26,7 @@ const HOVER_COLORS = {
   },
 };
 
-export default function Home({ allPostsData }: { allPostsData: PostList }) {
+export default function HomePage({ allPostsData }: { allPostsData: PostList }) {
   return (
     <Layout home>
       <Head>
