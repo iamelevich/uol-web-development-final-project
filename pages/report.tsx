@@ -1,6 +1,13 @@
 import Head from 'next/head';
 import Link from 'next/link';
 import Layout from '../components/layout';
+import Image from 'next/image';
+
+import MainPageWireframe from '../public/images/Main_page.png';
+import PostWireframe from '../public/images/Post.png';
+import AboutMeWireframe from '../public/images/About_me.png';
+import FindPhotosWireframe from '../public/images/Find_Photos.png';
+import ReportWireframe from '../public/images/Report.png';
 
 export default function ReportPage() {
   return (
@@ -38,7 +45,7 @@ export default function ReportPage() {
             In future will use it like a template for my personal web site and
             will add here my articles. Probably it will be helpfull for somebody
           </li>
-          <li>And nothing more I think, cause this website super simple</li>
+          <li>Search for the free photos</li>
         </ul>
 
         <h2>
@@ -71,8 +78,8 @@ export default function ReportPage() {
             plugin
           </li>
           <li>
-            Read about remark and how it can be used for parsing Markdown and
-            converting it to the HTML
+            Find a way how fetching remote data can be done with{' '}
+            <a href="https://tanstack.com/query/v4">react-query</a>
           </li>
           <li>
             That <a href="https://nextjs.org">Next.js</a> has problems with
@@ -95,7 +102,9 @@ export default function ReportPage() {
         </h2>
         <p>
           A lot of things, the main one - I will not use static HTML, SSR and
-          some static generation - yes, but make it staic - no.
+          some static generation - yes, but make it staic - no. Also find photo
+          part can be improved a lot with filters, paging and etc. Only basic
+          functionality was implemented.
         </p>
 
         <h2>What resources were used when creating your work?</h2>
@@ -123,7 +132,48 @@ export default function ReportPage() {
               <a>Site Map</a>
             </Link>
           </li>
+          <li>
+            <Link href="#wireframe">
+              <a>Wireframe</a>
+            </Link>
+          </li>
         </ul>
+
+        <h3 id="wireframe">Wireframe</h3>
+        <h4>Main page</h4>
+        <Image
+          src={MainPageWireframe}
+          alt="Wireframe main page"
+          className="just-image"
+        />
+
+        <h4>Post page</h4>
+        <Image
+          src={PostWireframe}
+          alt="Wireframe post page"
+          className="just-image"
+        />
+
+        <h4>About me page</h4>
+        <Image
+          src={AboutMeWireframe}
+          alt="Wireframe about me page"
+          className="just-image"
+        />
+
+        <h4>Find photos page</h4>
+        <Image
+          src={FindPhotosWireframe}
+          alt="Wireframe find photos page"
+          className="just-image"
+        />
+
+        <h4>Report page</h4>
+        <Image
+          src={ReportWireframe}
+          alt="Wireframe report page"
+          className="just-image"
+        />
       </section>
     </Layout>
   );

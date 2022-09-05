@@ -15,7 +15,7 @@
     @apply gradient-link;
   }
   
-  .prose img {
+  .prose img:not(.just-image) {
     @apply transition ease-in-out delay-150 duration-300 hover:scale-125
   }
 }
